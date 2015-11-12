@@ -15,7 +15,7 @@ public class App
         int year = dt.getYear();
         System.out.println( "Hello from "+year);
 
-        SystemStatus.getMemoryUsage();
+        SystemStatus.showMemoryUsage();
     }
 
     /**

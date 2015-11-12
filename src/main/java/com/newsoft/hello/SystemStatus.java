@@ -8,7 +8,7 @@ public class SystemStatus {
 
     private static Sigar sigar = new Sigar();
 
-    public static void getMemoryUsage(){
+    public static void showMemoryUsage(){
         System.out.println("**************************************");
         System.out.println("*** Informations about the Memory: ***");
         System.out.println("**************************************\n");
