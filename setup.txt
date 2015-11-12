@@ -1,0 +1,7 @@
+Development:
+1. get hyperic sigar api dlls
+2. run program with VM argument -Djava.library.path=</path/to/dll>
+
+Production:
+java -Djava.library.path=</path/to/dll> -jar target/mavenHelloworld-1.0.0.beta-jar-with-dependencies.jar
+
