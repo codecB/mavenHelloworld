@@ -38,20 +38,22 @@ public class SystemStatus {
 //                / 1024 / 1024+ " MB");
 
 
-        NumberFormat formatter = new DecimalFormat("#0.000");
+        NumberFormat formatter = new DecimalFormat("#0.00");
 
-        System.out.println("Actual total free system memory: "
-                + formatter.format((double)mem.getActualFree() / 1024 / 1024 /1024)+ " GB");
-        System.out.println("Actual total used system memory: "
-                + formatter.format((double)mem.getActualUsed() / 1024 / 1024/1024) + " GB");
-        System.out.println("Total free system memory ......: " + formatter.format((double)mem.getFree()
-                / 1024 / 1024/1024)+ " GB");
-        System.out.println("System Random Access Memory....: " + formatter.format((double)mem.getRam()/1024)
-                + " GB");
+//        System.out.println("Actual total free system memory: "
+//                + formatter.format((double)mem.getActualFree() / 1024 / 1024 /1024)+ " GB");
+//        System.out.println("Actual total used system memory: "
+//                + formatter.format((double)mem.getActualUsed() / 1024 / 1024/1024) + " GB");
+//        System.out.println("Total free system memory ......: " + formatter.format((double)mem.getFree()
+//                / 1024 / 1024/1024)+ " GB");
+//        System.out.println("System Random Access Memory....: " + formatter.format((double)mem.getRam()/1024)
+//                + " GB");
+
         System.out.println("Total system memory............: " + formatter.format((double)mem.getTotal()
                 / 1024 / 1024/1024)+ " GB");
         System.out.println("Total used system memory.......: " + formatter.format((double)mem.getUsed()
                 / 1024 / 1024/1024)+ " GB");
+        System.out.println("Percentage used................: " + formatter.format((double)mem.getUsed()/mem.getTotal()*100)+ " %");
 
         System.out.println("\n**************************************\n");
     }
