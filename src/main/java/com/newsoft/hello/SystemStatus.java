@@ -12,7 +12,7 @@ public class SystemStatus {
 
     private static Sigar sigar = new Sigar();
 
-    public static void showMemoryUsage(){
+    public static void showMemoryUsage() {
         System.out.println("**************************************");
         System.out.println("*** Informations about the Memory: ***");
         System.out.println("**************************************\n");
@@ -49,11 +49,11 @@ public class SystemStatus {
 //        System.out.println("System Random Access Memory....: " + formatter.format((double)mem.getRam()/1024)
 //                + " GB");
 
-        System.out.println("Total system memory............: " + formatter.format((double)mem.getTotal()
-                / 1024 / 1024/1024)+ " GB");
-        System.out.println("Total used system memory.......: " + formatter.format((double)mem.getUsed()
-                / 1024 / 1024/1024)+ " GB");
-        System.out.println("Percentage used................: " + formatter.format((double)mem.getUsed()/mem.getTotal()*100)+ " %");
+        System.out.println("Total system memory............: " + formatter.format((double) mem.getTotal()
+                / 1024 / 1024 / 1024) + " GB");
+        System.out.println("Total used system memory.......: " + formatter.format((double) mem.getUsed()
+                / 1024 / 1024 / 1024) + " GB");
+        System.out.println("Percentage used................: " + formatter.format((double) mem.getUsed() / mem.getTotal() * 100) + " %");
         System.out.println("\n**************************************\n");
     }
 }
