@@ -54,7 +54,6 @@ public class SystemStatus {
         System.out.println("Total used system memory.......: " + formatter.format((double)mem.getUsed()
                 / 1024 / 1024/1024)+ " GB");
         System.out.println("Percentage used................: " + formatter.format((double)mem.getUsed()/mem.getTotal()*100)+ " %");
-
         System.out.println("\n**************************************\n");
     }
 }
